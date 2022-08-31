@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeWageComputation
+namespace EmployeeWage2
 {
     internal class EmployeeWage
     {
@@ -39,6 +39,5 @@ namespace EmployeeWageComputation
             totalEmpWage = WAGE_PER_HR * empHrs;
             Console.WriteLine(totalEmpWage);
         }
-
     }
 }
