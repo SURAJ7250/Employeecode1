@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeWage2
+namespace EmployeeWageComputation
 {
     internal class EmployeeWage
     {
