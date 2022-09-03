@@ -1,5 +1,5 @@
 ﻿using System;
-namespace EmployeeWage2
+namespace EmployeeWageComputation
 {
     class Program
     {
