@@ -5,8 +5,9 @@ namespace EmployeeWageComputation
     {
         static void Main(string[] args)
         {
-            EmployeeWage employeewage = new EmployeeWage();
-            employeewage.CalculateEmpWage();
+            EmployeeWage workingdays = new EmployeeWage();
+            workingdays.computeEmpWage("Dmart", 20, 2, 10);
+            workingdays.computeEmpWage("Jio", 30, 4, 20);
         }
     }
 }
