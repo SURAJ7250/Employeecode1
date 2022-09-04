@@ -5,9 +5,9 @@ namespace EmployeeWageComputation
     {
         static void Main(string[] args)
         {
-            EmployeeWage workingdays = new EmployeeWage();
-            workingdays.computeEmpWage("Dmart", 20, 2, 10);
-            workingdays.computeEmpWage("Jio", 30, 4, 20);
+            EmployeeWage employeewage = new EmployeeWage();
+            employeewage.calculateEmpWage("DMart", 30, 20, 100);
+            employeewage.calculateEmpWage("Reliance", 20, 10, 200);
         }
     }
 }
