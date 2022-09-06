@@ -9,15 +9,15 @@ namespace EmployeeWageComputation
 {
     public class EmployeeWage
     {
-        const int IS_FULL_TIME = 0, IS_PART_TIME = 1, WAGE_PER_HR = 20, FULL_TIME_HR = 8, PART_TIME_HR = 4, WORKING_DAYS = 20;
+        const int IS_FULL_TIME = 0, IS_PART_TIME = 1, WAGE_PER_HR = 20, FULL_TIME_HR = 8, PART_TIME_HR = 4, WORKING_DAYS = 20;// global variables
         private string company;
         private int empRatePerHour;
-        private int maxPerHourMonth;
-        private int numbOfWorkingDays;
+        private int maxHourPerMonth;
+        private int numberOfWorkingDays;
         private int totalEmpWage;
         private string totalempWage;
 
-        public static int EmpWageBuilderObject(string company, int empRatePerHour, int numberOfWorkingDays, int maxHourPerMonth)
+        public EmpWageBuilderObject(string company, int empRatePerHour, int numberOfWorkingDays, int maxHourPerMonth)//parameterised constructor
         {
             this.company = company;
             this.empRatePerHour = empRatePerHour;
@@ -27,8 +27,8 @@ namespace EmployeeWageComputation
         }
         public void computeEmpWage()
         { 
-            int empHrs = 0, totalWorkingDays = 0, totalEmpHrs = 0;//variables
-        while(totalEmpHrs <= this.maxPerHourMonth && totalWorkingDays < this.numbOfWorkingDays)
+            int empHrs = 0, totalWorkingDays = 0, totalEmpHrs = 0;// local variables
+        while(totalEmpHrs <= this.maxHourPerMonth && totalWorkingDays < this.numberOfWorkingDays)
             {
                 totalWorkingDays++;
                 Random random = new Random();
@@ -47,7 +47,6 @@ namespace EmployeeWageComputation
             }
                 totalEmpWage = totalEmpHrs * this.empRatePerHour;
                 Console.WriteLine(" totalEmpWage for the company : " + company + "is: " + totalEmpWage);
-               // return totalEmpWage;
        }
         public string toString()
             {
